@@ -1,4 +1,4 @@
-package com.bdbank.BDBank.exceptions;
+package com.bdbank.exceptions;
 
 public class CustomExceptionHandler {
 }

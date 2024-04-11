@@ -1,4 +1,4 @@
-package com.bdbank.BDBank.entities;
+package com.bdbank.entities;
 
 
 public class Account {

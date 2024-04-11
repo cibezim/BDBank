@@ -1,6 +1,6 @@
-package com.bdbank.BDBank;
+package com.bdbank;
 
-import com.bdbank.BDBank.entities.Account;
+import com.bdbank.entities.Account;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.test.context.SpringBootTest;
