@@ -1,10 +1,16 @@
 package com.bdbank.entities;
 
+import javax.persistence.Id;
+import javax.persistence.Entity;
+import java.util.Set;
 
+@Entity
 public class Account {
-    private String name;
-    private String password;
-    private String account;
+    @Id
+   private long accNum;
+   private Set<User> authUsers;
+   private long routingNum;
+
 
     // Constructors, getters, and setters
     public Account() {
@@ -18,8 +24,29 @@ public class Account {
     }
 
     // Getters and setters...
-
-    public String getName() {
-        return name;
+    public long getAccNum() {
+        return accNum;
     }
+
+    public void setAccNum(long accNum) {
+        this.accNum = accNum;
+    }
+
+    public Set<User> getAuthUsers() {
+        return authUsers;
+    }
+
+    public void setAuthUsers(Set<User> authUsers) {
+        this.authUsers = authUsers;
+    }
+
+    public long getRoutingNum() {
+        return routingNum;
+    }
+
+    public void setRoutingNum(long routingNum) {
+        this.routingNum = routingNum;
+    }
+
+
 }
